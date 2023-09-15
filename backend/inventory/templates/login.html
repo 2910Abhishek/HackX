@@ -1,11 +1,10 @@
 
-
+{% load static %}
 <html lang="en">
 <head>
-     
      <title>Login Page</title>
      <!--LINKING TO THE CSS-->
-    <link rel="stylesheet" href="styleforhome.css">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
     <style>
       body{
         background: url('Assest/images.jpg');
@@ -30,6 +29,8 @@
           <li><a href="#contact">Contact</a></li>
         </ul> -->
         
+            
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -46,7 +47,7 @@
             <div class="input-group">
               <div class="input-field" id="namefield">
                 <i class="fa-solid fa-user"></i>
-                <input type="text" name = "username" placeholder="Name">
+                <input type="text" name = "Username" placeholder="Name">
               </div>
 
               <div class="input-field">
