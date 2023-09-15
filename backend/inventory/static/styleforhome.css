@@ -105,7 +105,7 @@ background-image:linear-gradient(to right,#a517ba,#5f1782) ;
 .about-title{
     font-size: 40px;
     font-weight: 600;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 #about-us ul li{
     margin: 10px 0;
@@ -184,16 +184,6 @@ body {
     
 }
 
-
-/* #abc1{
-           
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height:0vh;
-    width:100%;
-
-} */
 .logo
 {
     height:100px;

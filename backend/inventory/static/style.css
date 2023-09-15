@@ -1,8 +1,22 @@
 body{
     background: rgb(230, 227, 227);
 }
+#navbar{
+    position: sticky;
+    background-image:linear-gradient(180deg,black,grey) ; 
+}
 
 .my-card:hover{
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
+}
+/*--About us*/
+#about-us{
+   background:#f8f9f8;
+   padding-bottom: 50px;
+   padding-left: 50px;
+}
+.card-header{
+    background-image:linear-gradient(90deg,red,black,rgb(37, 162, 215)) ; 
+    color:rgb(255, 166, 181);
 }
