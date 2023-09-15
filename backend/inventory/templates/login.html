@@ -43,7 +43,7 @@
       <div class="form-box">
         <h1 id="title">Sign in</h1>
         <form action = "login" method = "POST">
-           
+          {% csrf_token %}
             <div class="input-group">
               <div class="input-field" id="namefield">
                 <i class="fa-solid fa-user"></i>
@@ -60,11 +60,11 @@
               <button type="submit" id="signinbtn">Sign In</button>
             </div>
         </form>
-        <!-- <div>
-         
+        <div>
+          {% for message in messages%}
           <h3>{{message}}</h3>
-         
-      </div> -->
+          {% endfor %}
+      </div>
       </div>
     </div>
   </div>

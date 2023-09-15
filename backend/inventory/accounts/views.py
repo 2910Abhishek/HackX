@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth.models import User,auth
+from django.contrib.auth.models import User , auth
 from django.contrib import messages
 
 # Create your views here.
@@ -21,13 +21,13 @@ def login(request):
         return render(request , 'login.html')
 
 
-def register(requset):
+def register(request):
     
-    if requset.method == 'POST':
-        username = requset.POST['Username'],
-        password1 = requset.POST['Password1'],
-        password2 = requset.POST['Password2'],
-        email = requset.POST['Email'],
+    if request.method == 'POST':
+        username = request.POST['Username'],
+        password1 = request.POST['Password1'],
+        password2 = request.POST['Password2'],
+        email = request.POST['Email'],
         
         if (password1 == password2):
             if User.objects.filter(username = username).exists():
@@ -41,8 +41,8 @@ def register(requset):
                 user.save()
                 return redirect('login')
     else:
-        messages.info(request, 'register.html')
-        return render('register')
+        messages.info(request,'Password Not Matched')
+        return render(request , 'register.html')
     
 
 
