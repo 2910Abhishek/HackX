@@ -20,11 +20,21 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 
     <!--Custome CSS-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 
     <title>Inventary Managmennt System</title>
     <!--LINKING TO THE CSS-->
     <link rel="stylesheet" href="{% static 'styleforhome.css' %}">
+    <style>
+        body{
+            background: rgb(230, 227, 227);
+        }
+        
+        .my-card:hover{
+            transform: scale(1.1);
+            transition: 0.2s ease-in-out;
+        }
+    </style>
 </head>
 <body>
     <!-- NAVBAR START -->
@@ -78,43 +88,43 @@
         </div>
         <div class="col-md-6 text-center">
             <!--image added to the top-->
-        <img src="inventary.jpg" class="imgfluid">
+        <img src="{% static 'img/inventary.jpg' %}" class="imgfluid">
 
         </div>
     </div>
    </div>
-    <img src="Assest/wave1.png" class="bottom-img">
+    <img src="{% static 'img/wave1.png' %}" class="bottom-img">
 
 
 </section>
 
 <!--Services section-->
 <section id="services">
-   <div class="container text-center">
-    <h1 class="title" >WHAT WE DO?</h1>
-    <div class="row text-center">
-        <div class="col-md-4">
-          <img src="servi1.png" alt="" class="service-img">  
-          <h4>Inventory Tracking</h4>
-          <p> Keep a real-time record of all products and materials
-            in stock, including quantities, locations, and stock levels.</p>
-        </div>
-        <div class="col-md-4">
-            <img src="servi2.png" alt="" class="service-img">  
-            <h4>Order Management</h4>
-            <p>  Manage purchase orders, sales orders, and supplier information.
-                 Track order status, generate invoices, and process customer orders.</p>
-          </div>
-          <div class="col-md-4">
-            <img src="servi3.png" alt="" class="service-img">  
-            <h4>Inventory Alerts</h4>
-            <p> Receive notifications for low stock levels, overstock situations,
-                 or expiration dates to prevent stockouts or excess inventory.</p>
-          </div>
-    </div>
-    <button type="button" class="btn btn-primary"> ALL SERVICES</button>
-   </div> 
-</section>
+    <div class="container text-center">
+     <h1 class="title" >WHAT WE DO?</h1>
+     <div class="row text-center">
+         <div class="col-md-4">
+           <img src="{% static 'img/servi1.png' %}" alt="" class="service-img">  
+           <h4>Inventory Tracking</h4>
+           <p> Keep a real-time record of all products and materials
+             in stock, including quantities, locations, and stock levels.</p>
+         </div>
+         <div class="col-md-4">
+             <img src="{% static 'img/servi2.png' %}" alt="" class="service-img">  
+             <h4>Order Management</h4>
+             <p>  Manage purchase orders, sales orders, and supplier information.
+                  Track order status, generate invoices, and process customer orders.</p>
+           </div>
+           <div class="col-md-4">
+             <img src="{% static 'img/servi3.png' %}" alt="" class="service-img">  
+             <h4>Inventory Alerts</h4>
+             <p> Receive notifications for low stock levels, overstock situations,
+                  or expiration dates to prevent stockouts or excess inventory.</p>
+           </div>
+     </div>
+     <button type="button" class="btn btn-primary"> ALL SERVICES</button>
+    </div> 
+ </section>
 
 <!--ABOUT US-->
 
@@ -144,6 +154,29 @@
 
           </div>
         </div>
+    </div>
+</section>
+<!--SOCIAL MEDIA SECTION-->
+<section id="social-media">
+<div class="container">
+  <p>FIND US ON SOCIAL MEDIA</p>
+  <div class="social-icons">
+    <a href="#"><img src="{% static 'img/instagram-icon.png' %}"></a>
+    <a href="#"><img src="{% static 'img/facebook-icon.png' %}"></a>
+    <a href="#"><img src="{% static 'img/whatsapp-icon.png' %}"></a>
+    <a href="#"><img src="{% static 'img/linkedin-icon.png' %}"></a>
+  </div>
+</div>
+</section>
+ <!--foooter section-------------->
+<section id="footer">
+  <img src="{% static 'img/wave2.png' %}" class="footer-img">
+  <div class="col-md-4 footer-box">
+    <div class="contact-container">
+      <p><b>CONTACT US</b></p>
+      <p><i class="fa fa-map-marker"></i> Trade center, bangalore</p>
+      <p><i class="fa fa-phone"></i>98989898</p>
+      <p><i class="fa fa-envelope-o" aria-hidden="true"></i>xyz@gmail.com</p>
     </div>
 </section>
     
