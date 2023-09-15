@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     background: url("{% static 'img/loginimages2.jpg' %}"); /* write norepeat after adding image*/
     background-size: cover;

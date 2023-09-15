@@ -44,7 +44,7 @@ def register(request):
                 return redirect('/')
         
         else:
-            print('Password Not Matching')
+            messages.info('PASSWORD NOT MATCHING')
             return redirect('register')
            
             
