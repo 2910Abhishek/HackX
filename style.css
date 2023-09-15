@@ -23,3 +23,9 @@ body{
 .head-tab{
     background-image:linear-gradient(90deg,red,black,rgb(37, 162, 215)) ;
 }
+.navbar-brand{
+    font-weight: bold;
+    margin-left:15px;
+    font-size:x-large;
+    color:gold;
+}
