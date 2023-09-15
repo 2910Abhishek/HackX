@@ -7,7 +7,7 @@
 
 
 body{
-    background-image: ("{% static 'img/loginimages2.jpg' %}"); /* write norepeat after adding image*/
+    background: url("{% static 'img/loginimages2.jpg' %}"); /* write norepeat after adding image*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,30 +26,26 @@ body{
     width:100%;
 
 } */
-.logo
-{
-    height:100px;
-    width:200px;
-    margin-left: 70px;
-   
-}
 
-.conatiner{
+.conatiners{
     width: 100%;
     height: 100%;
-    background-image: url(Back2.jpg);
+    background-image: blue;
    
 }
 .form-box{
-    width: 80%;
-    max-width: 400px;
+    width: 45%;
+    max-width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background:#fff;
-    padding: 50px 60px 70px;
-    text-align: center; 
+    background:transparent;
+    border: 10px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(20px);
+    box-shadow :0 0 10px rgba(0,0,0,.2); 
+    padding:60px 45px 7px;
+    text-align:center; 
 
 }
 
