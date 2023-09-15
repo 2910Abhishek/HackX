@@ -4,28 +4,6 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
-
-/* @media only screen and (max-width: 1199px)
-{
-	.main_nav
-	{
-		margin-left: 150px;
-	}
-	.header_phone
-	{
-		margin-right: 0;
-	}
-} */
- 
-/* body {
-    background-image: url("Assest/images.jpg");
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
-
-
-/* ahiya thi saudhi pehla image in the background change thase*/
 body{
     background:url("Assest/loginimages2.jpg")no-repeat; /* write norepeat after adding image*/
     background-size: cover;
@@ -35,24 +13,6 @@ body{
     align-items: center;
     background-position: center;
 }
-
-/* #abc1{
-           
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height:0vh;
-    width:100%;
-
-} */
-/* .logo
-{
-    height:100px;
-    width:200px;
-    margin-left: 70px;
-   
-} */
-
 .conatiners{
     width: 20px;
     height: 100%;
@@ -61,7 +21,7 @@ body{
 }
 .form-box{
     width: 45%;
-    max-width: 350px;
+    max-width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,21 +30,20 @@ body{
     border: 10px solid rgba(255,255,255,.2);
     backdrop-filter:blur(20px);
     box-shadow :0 0 10px rgba(0,0,0,.2); 
-    padding:60px 45px 7px;
+    padding:70px 50px 7px;
     text-align:center; 
 
 }
-
 .form-box h1{
     font-size: 30px;
     margin-bottom: 60px;
-    color: #d9d6de;
+    color: #fff;
     position: relative;
+    text-align: center;
 }
-
 /* .form-box h1::after{
     content: '';
-    width: 85px;
+    width: 50px;
     height: 4px;
     border-radius: 3px;
     background: #3c00a0;
@@ -92,9 +51,12 @@ body{
     bottom: -12px;
     left: 50px;
     transform: translateX(55%);
+}
+.form-box h1:hover:after{
+    width: 35%;
 } */
 
-/* hovering the underline parts*/
+/* sign ni underline*/
 
 .form-box h1::after {
     content: '';
@@ -103,9 +65,9 @@ body{
     border-radius: 3px;
     background: #3c00a0;
     position: absolute;
-    bottom: -7px; /* Set to 0 to position it perfectly below the text */
+    bottom: -10px; /* Set to 0 to position it perfectly below the text */
   
-    left: 65px;/* set the underlined from the left side*/
+    left: 85px;/* set the underlined from the left side*/
     transform: scaleX(0); /* Start with no width, then scale it on hover */
     transform-origin: bottom left; /* Transform from the bottom-left corner */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
@@ -114,7 +76,6 @@ body{
 .form-box h1:hover::after {
     transform: scaleX(1); /* Expand the line to 100% on hover */
 }
-
 
 .input-field{
     background: #eaeaea;
@@ -152,6 +113,7 @@ form p{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .btn-field button{
@@ -170,6 +132,7 @@ form p{
 .input-group{
     height: 280px;
 }
+
 
 .btn-field button.disable{
     background-color: #eaeaea;
@@ -197,6 +160,3 @@ nav ul li a{
     position: relative;
    
 }
-
-
-

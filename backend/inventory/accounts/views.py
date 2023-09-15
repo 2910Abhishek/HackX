@@ -1,4 +1,4 @@
-       
+
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User , auth
 from django.contrib import messages
@@ -14,7 +14,7 @@ def login(request):
         
         if user is not None:
             auth.login(request , user)
-            return redirect('index')
+            return redirect('/')
         else:
             messages.info(request , 'invalid credenrials')
             return redirect('login')
@@ -41,10 +41,10 @@ def register(request):
                 user = User.objects.create_user(username=username,password=password1,email=email)
                 user.save(),
                 print('user created')
-                return redirect('login')
+                return redirect('/')
         
         else:
-            print('Password Not Matching')
+            messages.info('PASSWORD NOT MATCHING')
             return redirect('register')
            
             
@@ -59,3 +59,6 @@ def logout(request):
     
 def index(request):
     return render(request , 'index.html')
+
+def product(request):
+    return render(request , 'product.html')

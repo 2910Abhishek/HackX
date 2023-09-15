@@ -40,7 +40,7 @@
     <!-- NAVBAR START -->
     <section id="nav-bar">
         <ul class="navbar-nav ml-auto">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="#">CURIOUS CODERS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               
@@ -51,28 +51,45 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#top">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">SERVICES <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#services">SERVICES <span class="sr-only">(current)</span></a>
                       </li>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                           <li class="nav-item active">
-                            <a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#about-us">ABOUT<span class="sr-only">(current)</span></a>
                           </li>
+                          {% if user.is_authenticated %}
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Go To Main Page<span class="sr-only">(current)</span></a>
+                            </li>
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="accounts/logout">Logout<span class="sr-only">(current)</span></a>
+                              </li>
+                          {% else %}
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="accounts/login">LOGIN<span class="sr-only">(current)</span></a>
+                          </li>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="accounts/register">REGISTER<span class="sr-only">(current)</span></a>
+                            </li>
+                        {% endif %}
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                <a class="nav-link" href="accounts/login">LOGIN<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#footer">CONTACT<span class="sr-only">(current)</span></a>
                               </li>
-                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto">
-                                  <li class="nav-item active">
-                                    <a class="nav-link" href="accounts/register">REGISTER<span class="sr-only">(current)</span></a>
-                                  </li>
+                              
                
             </div>
           </nav>
@@ -88,8 +105,7 @@
         </div>
         <div class="col-md-6 text-center">
             <!--image added to the top-->
-        <img src="{% static 'img/inventary.jpg' %}" class="imgfluid">
-
+            <img src="{% static 'img/home3.png' %}" id="img-bt" class="img-fluid square-image">
         </div>
     </div>
    </div>
@@ -122,7 +138,7 @@
                   or expiration dates to prevent stockouts or excess inventory.</p>
            </div>
      </div>
-     <button type="button" class="btn btn-primary"> ALL SERVICES</button>
+   
     </div> 
  </section>
 
@@ -134,7 +150,7 @@
         <h1 class="title text-center">ABOUT US</h1>
         <div class="row">
           <div class="col-md-6">
-            <p>
+            <p class = 'about-title'>
               Why we're different?
             </p>
              <ul>
@@ -158,16 +174,15 @@
 </section>
 <!--SOCIAL MEDIA SECTION-->
 <section id="social-media">
-<div class="container">
-  <p>FIND US ON SOCIAL MEDIA</p>
-  <div class="social-icons">
-    <a href="#"><img src="{% static 'img/instagram-icon.png' %}"></a>
-    <a href="#"><img src="{% static 'img/facebook-icon.png' %}"></a>
-    <a href="#"><img src="{% static 'img/whatsapp-icon.png' %}"></a>
-    <a href="#"><img src="{% static 'img/linkedin-icon.png' %}"></a>
+  <div class="container">
+    <p>FIND US ON SOCIAL MEDIA</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/raj_shah_31/"><img src="{% static 'img/instagram-icon.png' %}"></a>
+      <a href="https://wa.me/+918866641716"><img src="{% static 'img/whatsapp-icon.png' %}"></a>
+      <a href="https://www.linkedin.com/in/raj-shah-374195254/"><img src="{% static 'img/linkedin-icon.png' %}"></a>
+    </div>
   </div>
-</div>
-</section>
+  </section>
  <!--foooter section-------------->
 <section id="footer">
   <img src="{% static 'img/wave2.png' %}" class="footer-img">
@@ -180,4 +195,10 @@
     </div>
 </section>
     
+<script src="{% static 'smooth-scroll.js' %}"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
+
+</html>

@@ -1,49 +1,29 @@
-
 {% load static %}
 <html lang="en">
 <head>
+     
      <title>Login Page</title>
      <!--LINKING TO THE CSS-->
     <link rel="stylesheet" href="{% static 'login.css' %}">
-    <style>
+     <style>
       body{
-        background: url('Assest/images.jpg');
+        background: url("{% static 'img/loginimages2.jpg' %}");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         overflow: hidden;
     }
-   </style>
+   </style> 
      
 </head>
 
 <body>
- 
-  
-    <div class="container">
-      <nav>
-        <!-- <ul id="sidemenu">
-          <li><a href="#conatiner" >HOME</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul> -->
-        
-            
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="home.html">Home <span class="sr-only"></span></a>
-            </li>
-        
-      </nav>
-    </div>
-    <div class="container"> 
+
+    <div class="containers"> 
       <div class="form-box">
         <h1 id="title">Sign in</h1>
         <form action = "login" method = "POST">
-          {% csrf_token %}
+           
             <div class="input-group">
               <div class="input-field" id="namefield">
                 <i class="fa-solid fa-user"></i>
@@ -52,7 +32,7 @@
 
               <div class="input-field">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" name = "password"placeholder="Password">
+                <input type="password" name = "Password"placeholder="Password">
               </div>
               <!-- <p>Lost Password <a href="#">Click Here</a></p> -->
             </div>
@@ -60,11 +40,11 @@
               <button type="submit" id="signinbtn">Sign In</button>
             </div>
         </form>
-        <div>
-          {% for message in messages%}
+        <!-- <div>
+         
           <h3>{{message}}</h3>
-          {% endfor %}
-      </div>
+         
+      </div> -->
       </div>
     </div>
   </div>
