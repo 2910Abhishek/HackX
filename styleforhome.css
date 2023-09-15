@@ -154,11 +154,11 @@ background-image:linear-gradient(to right,#a517ba,#5f1782) ;
     background-image:linear-gradient(to right,#a517ba,#5f1782) ; 
 }
 
-.contact-container {
+/* .contact-container {
     text-align: center; /* Center align the content horizontally */
-    margin: 0 auto; /* Center the container itself horizontally */
-    max-width: 400px; /* Optional: Set a maximum width for the container */
-  }
+    /*margin: 0 auto; /* Center the container itself horizontally */
+   /* max-width: 400px; /* Optional: Set a maximum width for the container */
+ /* }
 
 nav ul li a::after
 {
@@ -177,4 +177,4 @@ nav ul li a:hover::after
     width: 100%;
 }
 
-
+ */

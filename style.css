@@ -3,7 +3,7 @@ body{
 }
 #navbar{
     position: sticky;
-    background-image:linear-gradient(90deg,red,blue); 
+    background-image:linear-gradient(180deg,black,grey) ; 
 }
 
 .my-card:hover{
@@ -16,6 +16,7 @@ body{
    padding-bottom: 50px;
    padding-left: 50px;
 }
-.bg-info{
-    background-color:red;
+.card-header{
+    background-image:linear-gradient(90deg,red,black,rgb(37, 162, 215)) ; 
+    color:rgb(255, 166, 181);
 }
