@@ -27,12 +27,13 @@
 
 /* ahiya thi saudhi pehla image in the background change thase*/
 body{
-    background:green;
+    background:url("Assest/loginimages2.jpg")no-repeat; /* write norepeat after adding image*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
     align-items: center;
+    background-position: center;
 }
 
 /* #abc1{
@@ -53,21 +54,24 @@ body{
 } */
 
 .conatiners{
-    width: 420px;
+    width: 20px;
     height: 100%;
     background-image:blue;
    
 }
 .form-box{
-    width: 50%;
-    max-width: 400px;
+    width: 45%;
+    max-width: 350px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background:purple;
-    padding: 50px 60px 70px;
-    text-align: center; 
+    background:transparent;
+    border: 10px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(20px);
+    box-shadow :0 0 10px rgba(0,0,0,.2); 
+    padding:60px 45px 7px;
+    text-align:center; 
 
 }
 
@@ -129,10 +133,10 @@ form p{
 }
 
 .btn-field button{
-    flex-basis: 48%;
+    /* flex-basis: 48%; */
     background: #3c00a0;
     color: #fff;
-    
+    width: 100%;
     height: 45px;
     border-radius: 20px;
     border: 0;
