@@ -5,21 +5,15 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1199px)
-{
-	.main_nav
-	{
-		margin-left: 150px;
-	}
-	.header_phone
-	{
-		margin-right: 0;
-	}
-}
 
-body {
-    background-image: url("img/Back2.jpg");
-    
+body{
+    background-image: ("{% static 'img/loginimages2.jpg' %}"); /* write norepeat after adding image*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    align-items: center;
+    background-position: center;
 }
 
 
