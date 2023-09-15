@@ -3,7 +3,7 @@ body{
 }
 #navbar{
     position: sticky;
-    background-image:linear-gradient(90deg,red,black,rgb(37, 162, 215)) ;
+    background-image:linear-gradient(90deg,red,black,rgb(37, 162, 215));
 }
 
 .my-card:hover{
