@@ -162,6 +162,12 @@ background-image:linear-gradient(to right,#a517ba,#5f1782) ;
 #about-us ul{
     margin-left: 20px;
 }
+#shifted-images img
+{
+    /* //margin-top: 30px;
+    padding: 500px; */
+    height: 150px;
+}
 /* SOCIAL MEDIA SECTION */
 #social-media{
     background: #f8f9fa;
