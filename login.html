@@ -5,10 +5,10 @@
      
      <title>Login Page</title>
      <!--LINKING TO THE CSS-->
-    <link rel="stylesheet" href="styleforhome.css">
+    <link rel="stylesheet" href="login.css">
     <style>
       body{
-        background: url('Assest/images.jpg');
+        background: url({% static 'img/images.jpg' %});
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -21,9 +21,9 @@
 <body>
  
   
-    <div class="container">
+    <!-- <div class="container">
       <nav>
-        <!-- <ul id="sidemenu">
+        <ul id="sidemenu">
           <li><a href="#conatiner" >HOME</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -31,7 +31,7 @@
         </ul> -->
         
             
-        
+<!--         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -39,8 +39,8 @@
             </li>
         
       </nav>
-    </div>
-    <div class="container"> 
+    </div>  -->
+    <div class="containers"> 
       <div class="form-box">
         <h1 id="title">Sign in</h1>
         <form action = "login" method = "POST">

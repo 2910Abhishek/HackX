@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* @media only screen and (max-width: 1199px)
+@media only screen and (max-width: 1199px)
 {
 	.main_nav
 	{
@@ -15,13 +15,11 @@
 	{
 		margin-right: 0;
 	}
-} */
+}
 
 body {
-    background-image: url("Assest/images.jpg");
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background-image: url("img/Back2.jpg");
+    
 }
 
 
@@ -34,25 +32,25 @@ body {
     width:100%;
 
 } */
-/* .logo
+.logo
 {
     height:100px;
     width:200px;
     margin-left: 70px;
    
-} */
+}
 
-.conatiners{
-    width: 420px;
+.conatiner{
+    width: 100%;
     height: 100%;
-    background-image:blue;
+    background-image: url(Back2.jpg);
    
 }
 .form-box{
-    width: 50%;
+    width: 80%;
     max-width: 400px;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background:#fff;
@@ -137,6 +135,8 @@ form p{
     background-color: #eaeaea;
     color: #555;
 }
+
+
 nav{
     margin-top: 10px;
     display: flex;
@@ -160,5 +160,26 @@ nav ul li a{
    
 }
 
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
 
 
+.logo{
+    padding-left: 40px;
+    height: 90px;
+    width: 250px;
+}
