@@ -14,6 +14,11 @@ body{
     height: auto; /* Auto-adjust the height to maintain aspect ratio */
     object-fit: cover; /* Crop the image to cover the container, maintaining aspect ratio */
 }
+
+.nav-item{
+    font-size: 145px;
+}
+
 #nav-bar{
     position: sticky;
     top: 0;
