@@ -17,13 +17,23 @@
 	}
 } */
 
-body {
+/* body {
     background-image: url("Assest/images.jpg");
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
+} */
 
+
+/* ahiya thi saudhi pehla image in the background change thase*/
+body{
+    background:green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    align-items: center;
+}
 
 /* #abc1{
            
@@ -55,7 +65,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background:#fff;
+    background:purple;
     padding: 50px 60px 70px;
     text-align: center; 
 
@@ -91,8 +101,9 @@ body {
     overflow: hidden;
 }
 
-input{
+.input-field input{
     width: 100%;
+    height: 100%;
     background: transparent;
     border: 0;
     outline: 0;
@@ -121,7 +132,8 @@ form p{
     flex-basis: 48%;
     background: #3c00a0;
     color: #fff;
-    height: 40px;
+    
+    height: 45px;
     border-radius: 20px;
     border: 0;
     outline: 0;
