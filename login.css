@@ -18,7 +18,7 @@
 }
 
 body {
-    background-image: url("img/Back2.jpg");
+    background-image: url("Assest/images.jpg");
     
 }
 
@@ -32,25 +32,25 @@ body {
     width:100%;
 
 } */
-.logo
+/* .logo
 {
     height:100px;
     width:200px;
     margin-left: 70px;
    
-}
+} */
 
 .conatiner{
     width: 100%;
     height: 100%;
-    background-image: url(Back2.jpg);
+    background-image: url(Assest/images.jpg);
    
 }
 .form-box{
-    width: 80%;
+    width: 50%;
     max-width: 400px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     background:#fff;
@@ -135,8 +135,6 @@ form p{
     background-color: #eaeaea;
     color: #555;
 }
-
-
 nav{
     margin-top: 10px;
     display: flex;
@@ -160,26 +158,5 @@ nav ul li a{
    
 }
 
-nav ul li a::after
-{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after
-{
-    width: 100%;
-}
 
 
-.logo{
-    padding-left: 40px;
-    height: 90px;
-    width: 250px;
-}
