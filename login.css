@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1199px)
+/* @media only screen and (max-width: 1199px)
 {
 	.main_nav
 	{
@@ -15,11 +15,13 @@
 	{
 		margin-right: 0;
 	}
-}
+} */
 
 body {
     background-image: url("Assest/images.jpg");
-    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 
@@ -40,10 +42,10 @@ body {
    
 } */
 
-.conatiner{
-    width: 100%;
+.conatiners{
+    width: 420px;
     height: 100%;
-    background-image: url(Assest/images.jpg);
+    background-image:blue;
    
 }
 .form-box{
