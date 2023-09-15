@@ -3,9 +3,7 @@ body{
 }
 #navbar{
     position: sticky;
-    background-image:linear-gradient(90deg,red,blue);
-   
-    
+    background-image:linear-gradient(90deg,red,blue); 
 }
 
 .my-card:hover{
@@ -14,7 +12,10 @@ body{
 }
 /*--About us*/
 #about-us{
-    background:#f8f9f8;
+   background:#f8f9f8;
    padding-bottom: 50px;
    padding-left: 50px;
+}
+.bg-info{
+    background-color:red;
 }
