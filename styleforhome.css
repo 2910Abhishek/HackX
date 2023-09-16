@@ -98,7 +98,62 @@ nav ul li a:hover::after
 }
 
 /* Services section*/
-#services{
+/* Existing CSS code */
+
+#services {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.service-img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.services {
+    padding: 20px;
+}
+
+.services h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.title::before {
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.title::after {
+    content: '';
+    background: #7b1798;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+
+/* CSS for the hovering effect */
+.service-img {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+/* Apply the hovering effect */
+.service-img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly on hover */
+}
+
+/* #services{
     padding: 80px 0;
     background-color: white;
 }
@@ -136,8 +191,21 @@ margin-top: 20px;
     margin-bottom: 40px;
     display: block;
     transform: translateY(8px);
+/* Existing CSS code */
 
-}
+/* Add this CSS for the hovering effect */
+/* .service-img {
+    width: 100px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+/* } */ */
+
+/* Apply the hovering effect */
+/* .service-img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly on hover */
+/* } */ */
+
+} */
 #services .btn-primary{
 box-shadow: none;
 padding: 8px 25px;

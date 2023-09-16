@@ -29,3 +29,20 @@ body{
     font-size:x-large;
     color:gold;
 }
+.about-title{
+   font-size:10px;
+}
+.invent{
+    padding-top:20px;
+}
+.orderm{
+    padding-top:10px;
+}
+.alt-sgnl{
+    height:70px;
+    width:70px;
+
+}
+.invent_alert{
+padding-top:5px;
+}
