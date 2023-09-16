@@ -23,7 +23,7 @@
       <div class="form-box">
         <h1 id="title">Sign in</h1>
         <form action = "login" method = "POST">
-           
+           {% csrf_token %}
             <div class="input-group">
               <div class="input-field" id="namefield">
                 <i class="fa-solid fa-user"></i>
@@ -32,7 +32,7 @@
 
               <div class="input-field">
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" name = "Password"placeholder="Password">
+                <input type="password" name = "password"placeholder="Password">
               </div>
               <!-- <p>Lost Password <a href="#">Click Here</a></p> -->
             </div>
