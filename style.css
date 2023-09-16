@@ -23,3 +23,26 @@ body{
 .head-tab{
     background-image:linear-gradient(90deg,red,black,rgb(37, 162, 215)) ;
 }
+.navbar-brand{
+    font-weight: bold;
+    margin-left:15px;
+    font-size:x-large;
+    color:gold;
+}
+.about-title{
+   font-size:10px;
+}
+.invent{
+    padding-top:20px;
+}
+.orderm{
+    padding-top:10px;
+}
+.alt-sgnl{
+    height:70px;
+    width:70px;
+
+}
+.invent_alert{
+padding-top:5px;
+}
