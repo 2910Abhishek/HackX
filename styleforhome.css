@@ -96,6 +96,25 @@ nav ul li a:hover::after
     height: auto; /* Auto-adjust the height to maintain aspect ratio */
     object-fit: cover; /* Crop the image to cover the container, maintaining aspect ratio */
 }
+/* Define the initial state of the image */
+/* Add the perspective and preserve-3d to the container */
+.square-image {
+    perspective: 1000px; /* Add perspective for 3D effect */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+  }
+  
+  /* Target the image for animation */
+  .square-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+  }
+  
+  /* Define the animation when hovering over the image */
+  .square-image:hover img {
+    transform: rotateY(180deg); /* Rotate the image 180 degrees on the Y-axis when hovered */
+  }
+  
 
 /* Services section*/
 #services{
@@ -156,18 +175,71 @@ background-image:linear-gradient(to right,#a517ba,#5f1782) ;
     font-weight: 600;
     margin-top: 8%;
 }
+.about-title li{
+    font-size: 18px;
+}
 #about-us ul li{
     margin: 10px 0;
 }
 #about-us ul{
     margin-left: 20px;
 }
-#shifted-images img
-{
-    /* //margin-top: 30px;
-    padding: 500px; */
-    height: 150px;
+.image-container{
+    height: 10000px;
+    /* margin-top: 20px; */
+     padding-top: 150px ; 
+
 }
+/* Define the initial state of the image */
+/* .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s; /* Add a smooth transition for opacity */
+  /* } */
+  
+  /* Define the animation when hovering over the image */
+  /* .image-container:hover img {
+    opacity: 0.7; Reduce the opacity when hovered to create a fade-in effect */
+  /* } */
+  
+  /* Add an overlay for better visual effect (optional) */
+  /* .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* You can adjust the overlay color and opacity */
+    /* opacity: 0;
+    transition: opacity 0.3s; Add a smooth transition for overlay opacity */ */
+  /* } */ 
+  
+  /* Define the overlay animation when hovering over the container */
+  /* .image-container:hover .image-overlay { */
+    /* opacity: 1; Increase the overlay opacity when hovered */
+  /* } */
+  /* Define the initial state of the image */
+.image-container {
+    perspective: 1000px; /* Add perspective for 3D effect */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Add a smooth transition for the transform property */
+  }
+  
+  /* Define the animation when hovering over the image */
+  .image-container:hover img {
+    transform: rotateY(180deg); /* Rotate the image 180 degrees on the Y-axis when hovered */
+  }
+  
+
 /* SOCIAL MEDIA SECTION */
 #social-media{
     background: #f8f9fa;
@@ -188,8 +260,8 @@ background-image:linear-gradient(to right,#a517ba,#5f1782) ;
     transform: translateY(10px);
 }
 
-/* footer section*/
-#footer{
+/* \*footer section*/ 
+ #footer{
     
     background-image:linear-gradient(to right,#a517ba,#5f1782) ; 
     color: #fff;}
@@ -208,11 +280,11 @@ background-image:linear-gradient(to right,#a517ba,#5f1782) ;
     background-image:linear-gradient(to right,#a517ba,#5f1782) ; 
 }
 
-/* .contact-container {
+ /* .contact-container {
     text-align: center; /* Center align the content horizontally */
-    /*margin: 0 auto; /* Center the container itself horizontally */
-   /* max-width: 400px; /* Optional: Set a maximum width for the container */
- /* }
+  /*  margin: 0 auto; /* Center the container itself horizontally */
+    /*max-width: 400px; /* Optional: Set a maximum width for the container */
+  /* } */
 
   /*LOGIN / REGISTER*/
   /* *{
